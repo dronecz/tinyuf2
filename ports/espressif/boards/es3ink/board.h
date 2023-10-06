@@ -38,10 +38,21 @@
 #define PIN_DOUBLE_RESET_RC   38
 
 
-// LED for indicator
-// If not defined neopixel will be use for flash writing instead
-//#define LED_PIN               13
-//#define LED_STATE_ON          1
+//--------------------------------------------------------------------+
+// LED
+//--------------------------------------------------------------------+
+
+// GPIO connected to Neopixel data
+#define NEOPIXEL_PIN          18
+
+#define NEOPIXEL_POWER_PIN    8
+#define NEOPIXEL_POWER_STATE  1
+
+// Brightness percentage from 1 to 255
+#define NEOPIXEL_BRIGHTNESS   0x20
+
+// Number of neopixels
+#define NEOPIXEL_NUMBER       1
 
 //--------------------------------------------------------------------+
 // USB UF2
